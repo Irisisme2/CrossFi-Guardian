@@ -27,6 +27,8 @@
 1. **Interactive Reports and Analytics** 📑:
    Data visualization is a key element of CrossFi Guardian. Interactive charts, tables, and heatmaps provide detailed portfolio analysis, showcasing performance, risk, and investment history in a clear manner. Users can generate custom reports on portfolio health and risk analysis. 📊
 
+![analytisc.png](https://cdn.dorahacks.io/static/files/19174b72af125ecb37d84a94561a6c64.png)
+
 1. **Education and Support** 🎓:
    The application includes an educational module explaining various aspects of portfolio management, risk, and investment strategies. Additionally, integration with DeFi protocol documentation and support ensures users have access to necessary information and technical assistance. 💡
 
