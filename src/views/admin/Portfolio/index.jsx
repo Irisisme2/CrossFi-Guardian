@@ -1,65 +1,29 @@
-/*!
-  _   _  ___  ____  ___ ________  _   _   _   _ ___   
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| 
- | |_| | | | | |_) || |  / / | | |  \| | | | | || | 
- |  _  | |_| |  _ < | | / /| |_| | |\  | | |_| || |
- |_| |_|\___/|_| \_\___/____\___/|_| \_|  \___/|___|
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* Horizon UI - v1.1.0
-=========================================================
-
-* Product Page: https://www.horizon-ui.com/
-* Copyright 2023 Horizon UI (https://www.horizon-ui.com/)
-
-* Designed and Coded by Simmmple
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
-// Chakra imports
-import { Box, SimpleGrid } from "@chakra-ui/react";
-import DevelopmentTable from "views/admin/Portfolio/components/DevelopmentTable";
-import CheckTable from "views/admin/Portfolio/components/CheckTable";
-import ColumnsTable from "views/admin/Portfolio/components/ColumnsTable";
-import ComplexTable from "views/admin/Portfolio/components/ComplexTable";
-import {
-  columnsDataDevelopment,
-  columnsDataCheck,
-  columnsDataColumns,
-  columnsDataComplex,
-} from "views/admin/Portfolio/variables/columnsData";
-import tableDataDevelopment from "views/admin/Portfolio/variables/tableDataDevelopment.json";
-import tableDataCheck from "views/admin/Portfolio/variables/tableDataCheck.json";
-import tableDataColumns from "views/admin/Portfolio/variables/tableDataColumns.json";
-import tableDataComplex from "views/admin/Portfolio/variables/tableDataComplex.json";
 import React from "react";
+import { Box, SimpleGrid } from "@chakra-ui/react";
+import TotalPortfolioValue from "views/admin/Portfolio/components/TotalPortfolioValue";
+import AssetAllocationOverview from "views/admin/Portfolio/components/AssetAllocationOverview";
+import TopPerformingAssets from "views/admin/Portfolio/components/TopPerformingAssets";
+import LiquidityAndRiskOverview from "views/admin/Portfolio/components/LiquidityAndRiskOverview";
+import DetailedView from "views/admin/Portfolio/components/DetailedView";
 
 export default function Settings() {
-  // Chakra Color Mode
   return (
-    <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
+    <Box pt={{ base: "130px", md: "80px", xl: "20px" }}>
+      {/* Side-by-side layout for TotalPortfolioValue and AssetAllocationOverview */}
       <SimpleGrid
-        mb='20px'
-        columns={{ sm: 1, md: 2 }}
-        spacing={{ base: "20px", xl: "20px" }}>
-        <DevelopmentTable
-          columnsData={columnsDataDevelopment}
-          tableData={tableDataDevelopment}
-        />
-        <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
-        <ColumnsTable
-          columnsData={columnsDataColumns}
-          tableData={tableDataColumns}
-        />
-        <ComplexTable
-          columnsData={columnsDataComplex}
-          tableData={tableDataComplex}
-        />
+        columns={{ base: 1, md: 2 }}  // Adjust columns based on screen size
+        spacing="20px"  // Space between columns
+      >
+        <TotalPortfolioValue />
+        <AssetAllocationOverview />
       </SimpleGrid>
+
+      {/* Full-width section for remaining components */}
+      <Box mt="20px">
+        <LiquidityAndRiskOverview />
+        <DetailedView />
+        <TopPerformingAssets />
+      </Box>
     </Box>
   );
 }

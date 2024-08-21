@@ -23,13 +23,6 @@ import RecentTransactions from "views/admin/default/components/RecentTransaction
 import Visualization from "views/admin/default/components/Visualization";
 import InvestmentOpportunities from "views/admin/default/components/InvestmentOpportunities";
 import PortfolioPerformance from "views/admin/default/components/PortfolioPerformance";
-import MiniCalendar from "components/calendar/MiniCalendar";
-import {
-  columnsDataCheck,
-  columnsDataComplex,
-} from "views/admin/default/variables/columnsData";
-import tableDataCheck from "views/admin/default/variables/tableDataCheck.json";
-import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
 
 export default function UserReports() {
   // State to manage the selected currency

@@ -17,6 +17,10 @@
 1. **Asset Allocation Optimization** ⚖️:
    The application offers advanced tools for analyzing and recommending optimal asset allocation, tailored to investment goals and current market conditions. Portfolio optimization algorithms help users maximize returns and minimize risk by automatically adjusting asset allocation. 📈
 
+![port.png](https://cdn.dorahacks.io/static/files/191746891b7803ce714eec64ed6983e0.png)
+
+![port2.png](https://cdn.dorahacks.io/static/files/1917468b8fd2fedb8ecf508486db74ee.png)
+
 1. **Notifications and Alerts** 🔔:
    CrossFi Guardian allows for personalized notifications about significant changes in the portfolio, such as asset value drops, yield changes, or new investment opportunities. Alerts also notify users about deadlines requiring action, such as reinvestment or strategy adjustments. 🚨
 
